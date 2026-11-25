@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#F0F2F5">
+    <LinearLayout android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="14dp" android:paddingBottom="10dp">
+        <TextView android:id="@+id/appTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Starting tomorrow" android:textSize="23sp" android:textStyle="bold" android:textColor="#171923" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Маленькие шаги каждый день" android:textSize="13sp" android:textColor="#737987" />
+    </LinearLayout>
+    <FrameLayout android:id="@+id/contentFrame" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ScrollView android:id="@+id/mainScroll" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="false">
+            <LinearLayout android:id="@+id/contentContainer" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="8dp" android:paddingBottom="20dp" />
+        </ScrollView>
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#FFFFFF" app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="labeled" app:itemHorizontalTranslationEnabled="false"
+        app:itemIconSize="22dp" app:itemTextAppearanceActive="@style/BottomNavText" app:itemTextAppearanceInactive="@style/BottomNavText" />
+</LinearLayout>

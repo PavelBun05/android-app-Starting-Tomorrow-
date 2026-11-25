@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_calendar
+drawable ic_launcher
+drawable ic_settings
+drawable ic_stats
+drawable ic_today
+id appTitle
+id bottomNavigation
+id contentContainer
+id contentFrame
+id header
+id mainScroll
+id nav_calendar
+id nav_settings
+id nav_stats
+id nav_today
+id rootLayout
+layout activity_main
+menu bottom_navigation_menu
+style AppTheme
+style BottomNavText
